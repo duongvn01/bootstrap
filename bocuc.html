@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Bootstrap</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+	  $( function() {
+		$( "#datepicker" ).datepicker();
+	  } );
+	</script>
+	<script>
+	document.getElementById("btnclick").onclick = function() {myFunction()};
+
+	function myFunction() {
+		ale
+	}
+	</script>
+  </head>
+
+  <body>
+ 
+        <!--Phần #header-->
+        <div id="header">
+          <img src="picture/SPKT.jpg" class="img-responsive w-100 p-3">         
+			<div id="content" class="nav navbar">
+			<!--Bat dau content-->         
+            
+				<nav class="navbar navbar-inverse" class="navbar-toggle collapsed">
+				<!--Bat dau nav menu-->
+					
+					<div class="container">
+					<!--bat dau containner-->
+						<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#showbar" aria-expanded="false" aria-controls="navbar">
+						  <!--<span class="sr-only">Toggle navigation</span>-->
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						</button>
+						</div>
+						
+						
+						<div id="showbar" class="collapse navbar-collapse">
+						<!--bat dau showbar-->
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+
+							<li class="dropdown nav-item">
+							  <a class="nav-link" href="#">Mobile</a>
+							  
+							  <div class="dropdown-content">
+								  <div class="nav navbar-nav">
+								  <a href="#">Iphone</a>
+								  <div class="dropdown-divider"></div>
+								  <a href="#">Samsung</a>
+								  <div class="dropdown-divider"></div>
+								  <a class="dropdown-item" href="#">Xiaomi</a>
+								  <a class="dropdown-item" href="#">Lenovo</a>
+								  </div>
+							  </div>
+							</li>
+							<li class="dropdown nav-item">
+							  <a class="nav-link" href="#">Laptop</a>
+							  
+							  <div class="dropdown-content">
+								  <div class="nav navbar-nav">
+								  <a href="#">DELL</a>
+								  <div class="dropdown-divider"></div>
+								  <a href="#">MAC</a>
+								  <div class="dropdown-divider"></div>
+								  <a class="dropdown-item" href="#">LENOVO</a>
+								  <a class="dropdown-item" href="#">ASUS</a>
+								  </div>
+							  </div>
+							</li>
+
+							<li class="dropdown nav-item">
+							  <a class="nav-link" href="#">Tablet</a>
+							  
+							  <div class="dropdown-content">
+								  <div class="nav navbar-nav">
+								  <a href="#">iPad Pro</a>
+								  <div class="dropdown-divider"></div>
+								  <a href="#">M3</a>
+								  <div class="dropdown-divider"></div>
+								  <a class="dropdown-item" href="#">Mobell</a>
+								  <a class="dropdown-item" href="#">Huawei</a>
+								  </div>
+							  </div>
+							</li>                                          
+						</ul>
+						</div>
+						<!--Ket thuc showbar-->
+					</div>
+					<!--Ket thuc containner-->				
+				</nav>
+				<!--Ket thuc nav menu-->			
+			</div>
+			<!--Ket thuc content-->
+		</div>
+		<!--Kết thúc #header-->
+
+        <!--Phần sidebar-->
+        <div id="leftali" class="col-sm-2">     
+			<!--
+			<div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar">
+			-->
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">Thông báo</a>
+                        <a href="#" class="list-group-item">Trang đăng ký học phần</a>
+                        <a href="#" class="list-group-item">Xem điểm</a>
+						<a href="#" class="list-group-item">Tài khoản sinh viên</a>
+						<a href="#" class="list-group-item">Hướng dẫn</a>
+                      </div>
+
+        </div>
+        <!--Kết thúc sidebar-->
+	
+				
+        <div id="content">
+		  <!--bat dau noi dung-->
+			<div class="row">
+                  <div class="panel-body">
+                    <div class="form-group col-md-6">
+                      <div><input type="text" class="form-control text-right" placeholder="Nhập tên ở đây" id="name"></div>
+                    </div>
+					
+					<div class="form-group col-md-6">
+					<div class="radio">
+                      <label><input type="radio" name="opradio">Nam</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="opradio">Nữ</label>
+                    </div>
+					</div>	
+					
+                    <div class="form-group col-md-6">
+                      <input type="password" class="form-control" placeholder="Nhập mật khẩu ở đây" id="pw">
+                    </div>                 
+                    															
+					<div class="col-md-6">
+					<!--Nhap ngay sinh-->
+					<p>Ngày sinh: <input type="text" placeholder="mm/dd/yyyy" id="datepicker"></p>
+					<!--ket thuc ngay sinh-->
+					</div>					
+										
+					<div class="col-md-10 centerbtn">
+					<button type="button" class="btn btn-primary active">Xem</button>
+					</div>
+					
+					<div class="col-md-6 centertable">
+					<!--bat dau table-->
+					
+						<input class="form-control" id="myInput" type="text" placeholder="Search..">
+						<table class="table">
+                        <thead>
+                          <tr>
+                            <th>Ten</th>
+                            <th>Ngay Sinh</th>
+                            <th>Dia Chi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Duong</td>
+                            <td>13/12/1994</td>
+                            <td>bao loc- lam dong</td>
+                          </tr>      
+                          <tr>
+                            <td>Nam</td>
+                            <td>22/4/1994</td>
+                            <td>Dong nai</td>
+                          </tr>
+              
+                        </tbody>
+						</table>
+						</div>
+					</div>
+					<!--ket thuc panel-body-->
+				</div>
+				<!--ket thuc row-->			
+				
+           </div>
+           <!--ket thuc noi dung-->
+				
+        </div>
+        <!--Kết thúc nội dung-->
+        
+		<!--
+    <script src="js/jquery-3.3.1.min.js"></script>
+	-->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     
+  </body>
+</html>

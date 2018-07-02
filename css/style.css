@@ -1,0 +1,32 @@
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style:none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.radio{
+	width:540px;
+	height:34px;
+}
+.centerbtn{
+	margin-left: 30%;
+}
+.centertable{
+	margin-left: 18%;
+}
+#leftali{
+	display: block;
+	margin-left: 20px;
+}
+#content{
+	display: block;
+	position: center;
+}
